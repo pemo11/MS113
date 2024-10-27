@@ -1,0 +1,2 @@
+Erstelle ein PowerShell-Skript, das alle Dateien im Documents-Verzeichnis in ein
+neues Verzeichnis verschiebt, die älter als 365 Tage und 5 Minuten sind

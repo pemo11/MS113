@@ -11,4 +11,4 @@ function choose
 
 $a = @("Hund", "Katze", "Maus", "Elefant", "Giraffe")
 
-choose $a, 2
+choose $a 2

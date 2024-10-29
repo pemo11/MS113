@@ -1,0 +1,62 @@
+<#
+ .SYNOPSIS
+ Berechen der Speicherkosten für eine Verzeichnisstruktur
+#>
+$VerbosePreference = 'Continue'
+$Speicherbelegung = 0
+$KostenGB = 0.2
+function Get-Speicherkosten 
+{
+Get-ChildItem -Path $env:userprofile -File -Recurse | ForEach-Object {
+    Write-Verbose "Bearbeite Datei: $($_.FullName)"
+    $Speicherbelegung += $_.Length
+}
+{ 
+    Get-ChildItem -Path .\*.txt -Recurse -Force
+    Get-ChildItem -Path "C:\YourDirectory" | Where-Object { $_.LastWriteTime -lt (Get-Date).AddDays(-30) }
+
+    Directory: C:\Test\Logs\Adirectory
+    
+}
+
+$Speicherbelegung / 1GB * $KostenGB
+$VerbosePreference = 'SilentlyContinue'
+function Get-Speicherkosten {
+    [CmdletBinding()]
+    Param (
+        [string]
+        [Parameter(Mandatory, ValueFromPipeline)]
+        [object[]] $InputObject
+    )
+    Begin {
+        # This block is optional
+    }
+    Process {
+        # This block is optional, too, but is required
+        # to process pipelined objects
+
+        foreach ($o in $Object) {
+            # do something
+        }
+    }
+
+
+    [CmdletBinding()]
+    Param (
+        [Parameter(Mandatory, ValueFromPipeline)]
+        [object[]] $InputObject
+    )
+}
+    Begin {
+        # This block is optional
+    }
+
+    Process {
+        # This block is optional, too, but is required-children
+        # to process pipelined objects
+
+        foreach ($o in $Object) {
+            # do something
+        }
+    }
+

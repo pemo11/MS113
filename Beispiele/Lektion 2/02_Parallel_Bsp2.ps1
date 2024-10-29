@@ -20,7 +20,6 @@ function Get-CpuCore
 # Der Default für ThrottleLimit ist 5
 $StartTime = Get-Date
 
-$Esc = [char]27
 
 "`e[32m *** Ausführung mit ThrottleLimit=5 ***$Esc[0m"
 1..10 | ForEach-Object -ThrottleLimit 5 -Parallel {

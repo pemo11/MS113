@@ -3,14 +3,18 @@
  Berechen der Speicherkosten für eine Verzeichnisstruktur
 #>
 
-$VerbosePreference = 'Continue'
-$Speicherbelegung = 0
-$KostenGB = 0.2
-Get-ChildItem -Path $env:userprofile -File -Recurse | ForEach-Object {
-    Write-Verbose "Bearbeite Datei: $($_.FullName)"
-    $Speicherbelegung += $_.Length
+function Get-Speicherkosten
+{
+    [CmdletBinding()]
+    param([String]$Path, [Double]$KostenGB=0.2)
+    $Speicherbelegung = 0
+    Get-ChildItem -Path $env:userprofile -File -Recurse | ForEach-Object {
+        Write-Verbose "Bearbeite Datei: $($_.FullName)"
+        $Speicherbelegung += $_.Length
+    }
+    [Math]::Round($Speicherbelegung / 1GB, 2)
 }
 
-$Speicherbelegung / 1GB * $KostenGB
+Get-Speicherkosten -Path $env:userprofile -KostenGB 0.1 # -Verbose
 
-$VerbosePreference = 'SilentlyContinue'
+# Get-Childitem -Path $env:userprofile -Directory | Get-Speicherkosten

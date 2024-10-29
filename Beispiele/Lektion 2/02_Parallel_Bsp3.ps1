@@ -25,16 +25,23 @@ function TuWas
 
 # Reguläre Ausführung
 
+# Geht nicht, da die Function nicht bekannt ist
+
+1..3 | ForEach-Object -Parallel {
+    TuWas -i $_
+}
+
+# Functionname wird einer Variable zugewiesen
 $TuWasPtr = "TuWas"
 
-# Aufruf etwas umständlich, aber die Übertragung auf Parallel soll nachvollziehbar sein
+# Regulärer Aufruf ohne -Parallel etwas umständlich, aber die Übertragung auf Parallel soll nachvollziehbar sein
 1..3 | ForEach-Object {
      &$TuWasPtr -i $_
 }
 
 1..3 | ForEach-Object -Parallel {
-    # Aufruf der Function geht nicht, da der Name Tuwas in dem Runspace nicht bekannt ist
+    # Der direkte Aufruf der Function geht nicht, da der Name Tuwas in dem Runspace nicht bekannt ist
     &$using:TuWasPtr -i $_
     # Der Inhalt der Variablen kann natürlich abgerufen werden
-    $using:TuWasPtr
+    # $using:TuWasPtr
 }

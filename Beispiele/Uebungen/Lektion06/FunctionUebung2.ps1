@@ -12,7 +12,10 @@ function Get-Speicherkosten
         Write-Verbose "Bearbeite Datei: $($_.FullName)"
         $Speicherbelegung += $_.Length
     }
-    [Math]::Round($Speicherbelegung / 1GB, 2)
+    [PSCustomObject]@{
+        Pfad = $Path
+        Kosten = [Math]::Round($Speicherbelegung / 1GB * $KostenGB, 2)
+    }
 }
 
 Get-Speicherkosten -Path $env:userprofile -KostenGB 0.1 # -Verbose

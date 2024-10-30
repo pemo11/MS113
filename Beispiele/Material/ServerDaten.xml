@@ -70,4 +70,144 @@
         <cost>2.1</cost>
         <purchaseDate>07/09/2004</purchaseDate>
     </server>
+    <server id="S_1010">
+        <size>large</size>
+        <manufacturer>Dell</manufacturer>
+        <producttype>PowerEdge R740</producttype>
+        <cost>4</cost>
+        <purchaseDate>15/03/2022</purchaseDate>
+    </server>
+    <server id="S_1011">
+        <size>medium</size>
+        <manufacturer>Dell</manufacturer>
+        <producttype>PowerEdge T440</producttype>
+        <cost>3</cost>
+        <purchaseDate>06/10/2021</purchaseDate>
+    </server>
+    <server id="S_1012">
+        <size>small</size>
+        <manufacturer>Dell</manufacturer>
+        <producttype>PowerEdge R640</producttype>
+        <cost>5</cost>
+        <purchaseDate>20/01/2023</purchaseDate>
+    </server>
+    <server id="S_1013">
+        <size>large</size>
+        <manufacturer>Dell</manufacturer>
+        <producttype>PowerEdge R840</producttype>
+        <cost>5</cost>
+        <purchaseDate>09/01/2020</purchaseDate>
+    </server>
+    <server id="S_1014">
+        <size>small</size>
+        <manufacturer>Hewlett Packard Enterprise</manufacturer>
+        <producttype>ProLiant DL360 Gen10</producttype>
+        <cost>4</cost>
+        <purchaseDate>22/11/2022</purchaseDate>
+    </server>
+    <server id="S_1015">
+        <size>large</size>
+        <manufacturer>Hewlett Packard Enterprise</manufacturer>
+        <producttype>ProLiant DL380 Gen10</producttype>
+        <cost>5</cost>
+        <purchaseDate>30/08/2021</purchaseDate>
+    </server>
+    <server id="S_1016">
+        <size>medium</size>
+        <manufacturer>Hewlett Packard Enterprise</manufacturer>
+        <producttype>ProLiant ML350 Gen10</producttype>
+        <cost>3</cost>
+        <purchaseDate>04/05/2023</purchaseDate>
+    </server>
+    <server id="S_1017">
+        <size>large</size>
+        <manufacturer>Hewlett Packard Enterprise</manufacturer>
+        <producttype>ProLiant DL560 Gen10</producttype>
+        <cost>4</cost>
+        <purchaseDate>12/12/2022</purchaseDate>
+    </server>
+    <server id="S_1018">
+        <size>large</size>
+        <manufacturer>Lenovo</manufacturer>
+        <producttype>ThinkSystem SR650</producttype>
+        <cost>4</cost>
+        <purchaseDate>02/18/2021</purchaseDate>
+    </server>
+    <server id="S_1019">
+        <size>small</size>
+        <manufacturer>Lenovo</manufacturer>
+        <producttype>ThinkSystem SR630</producttype>
+        <cost>5</cost>
+        <purchaseDate>14/05/2023</purchaseDate>
+    </server>
+    <server id="S_1020">
+        <size>medium</size>
+        <manufacturer>Lenovo</manufacturer>
+        <producttype>ThinkSystem ST550</producttype>
+        <cost>3</cost>
+        <purchaseDate>19/08/2022</purchaseDate>
+    </server>
+    <server id="S_1021">
+        <size>small</size>
+        <manufacturer>Lenovo</manufacturer>
+        <producttype>ThinkSystem SD530</producttype>
+        <cost>4</cost>
+        <purchaseDate>25/07/2020</purchaseDate>
+    </server>
+    <server id="S_1022">
+        <size>small</size>
+        <manufacturer>Cisco</manufacturer>
+        <producttype>UCS C220 M5</producttype>
+        <cost>4</cost>
+        <purchaseDate>17/09/2021</purchaseDate>
+    </server>
+    <server id="S_1023">
+        <size>large</size>
+        <manufacturer>Cisco</manufacturer>
+        <producttype>UCS C240 M5</producttype>
+        <cost>5</cost>
+        <purchaseDate>06/30/2023</purchaseDate>
+    </server>
+    <server id="S_1024">
+        <size>small</size>
+        <manufacturer>Cisco</manufacturer>
+        <producttype>UCS B200 M5</producttype>
+        <cost>4</cost>
+        <purchaseDate>12/09/2021</purchaseDate>
+    </server>
+    <server id="S_1025">
+        <size>small</size>
+        <manufacturer>Supermicro</manufacturer>
+        <producttype>SuperServer 1029U-TR4</producttype>
+        <cost>3</cost>
+        <purchaseDate>16/04/2022</purchaseDate>
+    </server>
+    <server id="S_1026">
+        <size>large</size>
+        <manufacturer>Supermicro</manufacturer>
+        <producttype>SuperServer 2029U-TR4</producttype>
+        <cost>4</cost>
+        <purchaseDate>22/07/2023</purchaseDate>
+    </server>
+    <server id="S_1027">
+        <size>medium</size>
+        <manufacturer>Supermicro</manufacturer>
+        <producttype>SuperServer 5019C-MR</producttype>
+        <cost>2</cost>
+        <purchaseDate>05/03/2021</purchaseDate>
+    </server>
+    <server id="S_1028">
+        <size>large</size>
+        <manufacturer>Supermicro</manufacturer>
+        <producttype>SuperBlade 6119P-ACR24H</producttype>
+        <cost>5</cost>
+        <purchaseDate>3/10/2021</purchaseDate>
+    </server>
+    <server id="S_1029">
+        <size>medium</size>
+        <manufacturer>IBM</manufacturer>
+        <producttype>Power Systems S922</producttype>
+        <cost>4</cost>
+        <purchaseDate>28/06/2022</purchaseDate>
+    </server>
 </serverdaten>

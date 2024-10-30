@@ -5,6 +5,7 @@
   Aufruf einer Function über den Umweg eines Moduls
 #>
 
+<#
 "`e[32m *** Durchlauf Nr. 1 ***`e[0m"
 
 # Das wäre auf die Dauer etwas umständlich
@@ -22,6 +23,8 @@
 
   TuWas -i $_
 
+}
+#>
 
 # Diese Variante lädt die Function über ein Modul
 "`e[34m *** Durchlauf Nr. 2 ***`e[0m"

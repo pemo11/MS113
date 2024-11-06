@@ -1,0 +1,29 @@
+# Ping-Statistik
+
+Erstellt: 06/11/24
+
+Ausgangspunkt ist eine Tabelle mit IP-Adressen von CDNs:
+
+Ping server 	Host 	IP 	Avg time, msec
+Germany, Berlin 	cdn.sayt.in 	199.247.18.199 	9.6
+Netherlands, Amsterdam 	cdn.sayt.in 	199.247.18.199 	10.1
+France, Paris 	cdn.sayt.in 	199.247.18.199 	16.3
+UK, London 	cdn.sayt.in 	199.247.18.199 	14.9
+Canada, Toronto 	cdn.sayt.in 	149.28.121.123 	16.2
+USA, San Francisco 	cdn.sayt.in 	149.28.121.123 	52.7
+USA, Dallas 	cdn.sayt.in 	149.28.121.123 	23.1
+USA, Chicago 	cdn.sayt.in 	149.28.121.123 	2.6
+USA, New-York 	cdn.sayt.in 	149.28.121.123 	19.8
+Singapore 	cdn.sayt.in 	157.230.240.216 	1.7
+Japan, Tokyo 	cdn.sayt.in 	157.230.240.216 	74.8
+Australia, Sydney 	cdn.sayt.in 	157.230.240.216 	95.9
+
+Die Tabelle soll mit einem PowerShell-Skript verarbeitet werden:
+
+>Einlesen aller Zeilen
+>Extrahieren von IP-Adresse und Antwortzeit per Regex
+>Anpingen aller Server mit dem ping Kommando
+>Auswerten der Antwortzeiten per Regex und Durschnittswerte
+>Vergleich der gemessenen Antwortzeiten mit den Vorgaben
+>Ausgabe einer Bewertung pro Server was die Antwortzeit angeht (schneller, langsamer oder gleich)
+>Erstellen eines HTML-Reports mit den Spalten Server, Avg. Antwortzeit1/Avg. Antwortzeit2, Bewertung
